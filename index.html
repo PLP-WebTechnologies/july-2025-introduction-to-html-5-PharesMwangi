@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="HTML5 + Accessibility and SEO">
+    <meta name="author" content="Phares Mwangi">
+    <title>Accessibility and SEO web-page</title>
+</head>
+<body>
+
+    <header>
+        <h1>Accessibility and SEO</h1>
+        <p>This webpage is designed to demonstrate accessibility and SEO best practices in web development.</p>
+        
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#About" title="About this webpage">About</a></li>
+                <li><a href="#Registration" title="Registration section">Registration</a></li>
+                <li><a href="#Table" title="Participants table">Participants</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="About">
+            <h2>About</h2>
+            <p>This web-page is to demonstrate best practices currently being used in HTML5 to allow accessibility and Search Engine Optimization(SEO). <br>
+            These concepts are related and significantly impact each other hence they are mostly intertwined.</p>
+            <img src="https://bestwebsiteaccessibility.com/wp-content/uploads/2022/07/seo-web-accessibility.png" alt="Visualization of SEO and Accessibility relationship" width="300" height="200">
+        </section>
+
+        <section id="Registration" aria-labelledby="Registration-heading">
+            <h2 id="Registration-heading">Registration Form</h2>
+
+            <form action="" aria-describedby="Registration-description">
+                <p id="Registration-description">Please fil in the form to register</p>
+
+                <label for="name">Name: </label>
+                <input type="text" name="name" placeholder="Enter your name" required aria-required="true"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="Enter your email" required aria-required="true"><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" name="password" placeholder="Create a password" required aria-required="true"><br><br>
+
+                <label for="confirm-password">Confirm password:</label>
+                <input type="password" name="password" placeholder="Confirm-password" required aria-required="true"><br><br>
+                 
+                <input type="checkbox" name="terms" required aria-required="true">
+                <label for="terms">I agree to terms and conditions</label><br><br>
+                
+
+                <button type="submit">Register</button><br><br>
+            </form>
+        </section>
+
+        <section id="Table" aria-label="Participants table">
+            <h2>Participants</h2>
+            <table border="1">
+                <tr>
+                    <th>Mane</th>
+                    <th>Email</th>
+                    <th>Nationality</th>
+                </tr>
+                <tr>
+                    <td>Phares</td>
+                    <td>phares@gmail.com</td>
+                    <td>Kenyan</td>
+                </tr>
+                <tr>
+                    <td>Mwangi</td>
+                    <td>mwangi@yahoo.com</td>
+                    <td>Nigerian</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Accessibility and SEO. By Phares Mwangi</p>
+    </footer>
+    
+</body>
+</html>
